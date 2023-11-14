@@ -11,7 +11,8 @@ function blob_fixup() {
             sed -i "s|/vendor/lib/liba2dpoffload\.so|liba2dpoffload_picasso\.so\x00\x00\x00" "${2}"
             ;;
         vendor/lib64/camera/components/com.mi.node.watermark.so)
-            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
+            [ "$2" = "" ] && return 0
+            grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
         *)
             return 1
