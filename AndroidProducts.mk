@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_picasso.mk
+    $(LOCAL_DIR)/lineage_picasso.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_picasso-user \
-    derp_picasso-userdebug \
-    derp_picasso-eng
+    lineage_picasso-user \
+    lineage_picasso-userdebug \
+    lineage_picasso-eng
