@@ -4,7 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-TARGET_BOOTLOADER_BOARD_NAME := lito
+# Board
+TARGET_BOOTLOADER_BOARD_NAME := picasso
 TARGET_BOARD_PLATFORM := lito
 TARGET_USE_EROFS := true
 
