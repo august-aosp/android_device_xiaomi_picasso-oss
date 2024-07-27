@@ -400,7 +400,9 @@ vendor/etc/charger_fstab.qti
 
 # Charger (Mi Turbo Charge)
 vendor/bin/batterysecret
-vendor/etc/init/init.batterysecret.rc
+
+# Charger (Init) - from modified
+vendor/etc/init/init.batterysecret.rc|b226b109e724ede81ecee091d3fcf5db892cfb00
 
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lito.so
