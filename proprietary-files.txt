@@ -86,9 +86,9 @@ vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/firmware/tfa98xx.cnt
 
 # Audio hardware
-vendor/lib/hw/audio.primary.lito.so
+vendor/lib/hw/audio.primary.lito.so:vendor/lib/hw/audio.primary.picasso.so
 vendor/lib/vndk/libxlog.so
-vendor/lib/liba2dpoffload.so
+vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_picasso.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/libresampler.so

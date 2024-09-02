@@ -1,2 +1,5 @@
+# Audio hardware
+ro.hardware.audio.primary=picasso
+
 # Display
 vendor.display.defer_fps_frame_count=2
