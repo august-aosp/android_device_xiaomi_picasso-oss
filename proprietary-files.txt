@@ -86,9 +86,9 @@ vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/firmware/tfa98xx.cnt
 
 # Audio hardware
-vendor/lib/hw/audio.primary.lito.so:vendor/lib/hw/audio.primary.picasso.so
+vendor/lib/hw/audio.primary.lito.so:vendor/lib/hw/audio.primary.picasso.so;FIX_SONAME
 vendor/lib/vndk/libxlog.so
-vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_picasso.so
+vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_picasso.so;FIX_SONAME
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/libresampler.so
@@ -396,7 +396,7 @@ vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc|b226b109e724ede81ecee091d3fcf5db892cfb00
 
 # Consumer IR
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lito.so
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lito.so;FIX_SONAME
 
 # Display-calibration
 vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml
@@ -429,8 +429,8 @@ vendor/etc/qdcm_calib_data_xiaomi_37_02_0a_video_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_37_02_0b_video_mode_dsc_dsi_panel.xml
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
+vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
@@ -492,7 +492,7 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp-pnscr.conf
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_RF.conf
-vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
+vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so;FIX_SONAME
 vendor/lib/libsn100u_fw.so
 
 # Sensors
