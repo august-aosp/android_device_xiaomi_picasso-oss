@@ -3,3 +3,8 @@ ro.hardware.audio.primary=picasso
 
 # Display
 vendor.display.defer_fps_frame_count=2
+
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|945|115|local:4630946687422888065,1080|945|115|local:4630946480857061761
+persist.vendor.fingerprint.sensor_modules=fpc,goodix
