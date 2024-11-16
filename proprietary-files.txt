@@ -501,8 +501,8 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp-pnscr.conf
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_RF.conf
-vendor/lib/libsn100u_fw.so
 vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
+vendor/lib/libsn100u_fw.so
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
