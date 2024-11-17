@@ -83,8 +83,8 @@ vendor/firmware/tfa98xx.cnt
 
 # Audio hardware
 vendor/lib/hw/audio.primary.lito.so:vendor/lib/hw/audio.primary.picasso.so;FIX_SONAME
-vendor/lib/vndk/libxlog.so
 vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_picasso.so;FIX_SONAME
+vendor/lib/vndk/libxlog.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/libresampler.so
@@ -339,12 +339,14 @@ vendor/lib64/libmulticam_video_optical_zoom.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libos.so
+vendor/lib64/libsdk_sr.so
 vendor/lib64/libsnpe_adsp.so
 vendor/lib64/libsnpe_dsp_domains.so
 vendor/lib64/libsnpe_dsp_domains_system.so
 vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libsnpe_dsp_domains_v2_system.so
 vendor/lib64/libst_soft_isp_shared.so
+vendor/lib64/libst_sr_models.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsymphony-cpu.so
 vendor/lib64/libsynx.so
@@ -455,8 +457,8 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Media configs - from modified
-vendor/etc/media_codecs_vendor.xml|678de658e1667228bf03469bbbf2a125d127f874
 vendor/etc/media_codecs_performance.xml|36c5508065d48b223b7d938400000fe6e75b9fb6
+vendor/etc/media_codecs_vendor.xml|678de658e1667228bf03469bbbf2a125d127f874
 
 # Media configs
 odm/etc/media_profiles_V1_0.xml
