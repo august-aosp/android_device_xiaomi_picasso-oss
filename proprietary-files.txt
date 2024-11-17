@@ -79,8 +79,8 @@ vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so;MODULE_SUFFIX=-64SYMLINK
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so;MODULE_SUFFIX=-64SYMLINK
 
 # Audio firmware
 vendor/firmware/tfa98xx.cnt
@@ -487,7 +487,7 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp-pnscr.conf
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_RF.conf
-vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so;FIX_SONAME
+vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so;MODULE_SUFFIX=-64SYMLINK
 vendor/lib/libsn100u_fw.so
 
 # Sensors
