@@ -26,6 +26,6 @@ DERP_BUILDTYPE := Official
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="picasso-user 12 RKQ1.200826.002 V13.0.5.0.SGICNXM release-keys"
+    BuildDesc=$(call normalize-path-list, "picasso-user 12 RKQ1.200826.002 V13.0.5.0.SGICNXM release-keys")
 
 BUILD_FINGERPRINT := Redmi/picasso/picasso:12/RKQ1.200826.002/V13.0.5.0.SGICNXM:user/release-keys
