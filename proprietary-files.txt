@@ -457,8 +457,8 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Media configs - from modified
-vendor/etc/media_codecs_performance.xml|36c5508065d48b223b7d938400000fe6e75b9fb6
-vendor/etc/media_codecs_vendor.xml|678de658e1667228bf03469bbbf2a125d127f874
+vendor/etc/media_codecs_performance.xml|9ce058591111079d736f1fec679cf6e703974fad
+vendor/etc/media_codecs_vendor.xml|427e07caaad49b2be3759c36b0d113d10bcfc75a
 
 # Media configs
 odm/etc/media_profiles_V1_0.xml
