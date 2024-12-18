@@ -75,8 +75,6 @@ vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so;MODULE_SUFFIX=-64SYMLINK
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so;MODULE_SUFFIX=-64SYMLINK
 
 # Audio firmware
 vendor/firmware/tfa98xx.cnt
