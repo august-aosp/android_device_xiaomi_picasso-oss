@@ -1,2 +1,9 @@
 # Netflix
 ro.netflix.bsp_rev=Q7250-19133-1
+
+# MIUI Camera
+vendor.camera.aux.packagelist=com.android.camera
+persist.vendor.camera.privapp.list=com.android.camera
+ro.com.google.lens.oem_camera_package=com.android.camera
+ro.miui.notch=1
+persist.sys.cam.skip_detach_image=true

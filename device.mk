@@ -56,6 +56,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     WifiResOverlayPicasso
 
+# MIUI Camera
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/,$(TARGET_COPY_OUT_SYSTEM)/etc)
+
 # Inherit from MindTheGApps
 ifeq ($(WITH_GAPPS), true)
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
@@ -71,3 +75,5 @@ $(call inherit-product, device/xiaomi/sm8250-common/common.mk)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/picasso/picasso-vendor.mk)
+
+-include vendor/infinity-priv/keys/keys.mk
