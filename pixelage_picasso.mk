@@ -15,6 +15,7 @@ $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
 # Pixelage
+PIXELAGE_BUILDTYPE := UNOFFICIAL
 PIXELAGE_MAINTAINER := hoang1007
 
 PRODUCT_NAME := pixelage_picasso
