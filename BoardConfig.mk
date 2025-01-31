@@ -23,7 +23,7 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_picasso
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
-TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
+TARGET_KERNEL_CONFIG := vendor/picasso_defconfig vendor/debugfs.config
 
 # Props
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
