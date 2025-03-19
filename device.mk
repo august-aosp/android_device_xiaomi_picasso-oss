@@ -71,3 +71,6 @@ $(call inherit-product, device/xiaomi/sm8250-common/common.mk)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/picasso/picasso-vendor.mk)
+
+# Inherit from MIUI Camera
+$(call inherit-product-if-exists, vendor/xiaomi/camera/config.mk)
