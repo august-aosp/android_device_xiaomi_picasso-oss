@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelage_picasso.mk
+    $(LOCAL_DIR)/yaap_picasso.mk
