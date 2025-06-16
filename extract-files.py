@@ -21,6 +21,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    "device/xiaomi/picasso",
     "vendor/xiaomi/sm8250-common",
     "hardware/qcom-caf/common/libqti-perfd-client",
     "hardware/qcom-caf/sm8250",
@@ -40,6 +41,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/lib/hw/audio.primary.picasso.so': blob_fixup()
         .binary_regex_replace(b'/vendor/lib/liba2dpoffload.so', b'liba2dpoffload_picasso.so\x00\x00\x00\x00'),
+    ('vendor/lib/hw/audio.primary.picasso.so', 'vendor/lib/libaudioroute_ext.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib64/camera/components/com.mi.node.watermark.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
 }  # fmt: skip
