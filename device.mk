@@ -7,6 +7,9 @@
 TARGET_BOARD_PLATFORM := lito
 TARGET_HAS_CUSTOM_WIFI_CONF := true
 
+# Camera
+$(call soong_config_set,camera,override_format_from_reserved,true)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
