@@ -25,8 +25,8 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_picasso
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_picasso
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
-TARGET_KERNEL_CONFIG := vendor/picasso_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/picasso
+TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
 
 # Props
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
