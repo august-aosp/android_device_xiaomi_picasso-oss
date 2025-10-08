@@ -8,17 +8,19 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common PixelAge stuff.
-$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
+# Inherit some common Lunaris stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
-# Pixelage
-PIXELAGE_BUILDTYPE := UNOFFICIAL
-PIXELAGE_MAINTAINER := hoang1007
+# Lunaris
+WITH_GMS := true
 
-PRODUCT_NAME := pixelage_picasso
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.paranoid.maintainer=hoang1007
+
+PRODUCT_NAME := lunaris_picasso
 PRODUCT_DEVICE := picasso
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
