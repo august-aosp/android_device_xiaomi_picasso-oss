@@ -16,6 +16,9 @@ $(call inherit-product, device/xiaomi/picasso/device.mk)
 
 # Lunaris
 WITH_GMS := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_GOOGLE_FILES := true
 
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.paranoid.maintainer=hoang1007
