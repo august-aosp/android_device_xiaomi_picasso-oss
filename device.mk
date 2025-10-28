@@ -25,6 +25,9 @@ $(call soong_config_set,camera,override_format_from_reserved,true)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Init
+$(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_picasso)
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayDevice \
