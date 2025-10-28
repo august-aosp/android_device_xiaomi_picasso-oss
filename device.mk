@@ -10,6 +10,9 @@ TARGET_HAS_CUSTOM_WIFI_CONF := true
 # Camera
 $(call soong_config_set,camera,override_format_from_reserved,true)
 
+# Init
+$(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_picasso)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
