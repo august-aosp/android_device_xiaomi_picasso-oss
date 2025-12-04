@@ -14,9 +14,11 @@ $(call soong_config_set,camera,override_format_from_reserved,true)
 $(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_picasso)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayDevice \
+    SettingsOverlayDevice \
+    SystemUIOverlayDevice \
+    WifiResOverlayDevice
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -45,9 +47,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # WiFi
 PRODUCT_COPY_FILES += \
    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
-
-PRODUCT_PACKAGES += \
-    WifiResOverlayPicasso
 
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/common.mk)
