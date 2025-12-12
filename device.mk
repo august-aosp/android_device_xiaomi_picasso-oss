@@ -7,8 +7,23 @@
 TARGET_BOARD_PLATFORM := lito
 TARGET_HAS_CUSTOM_WIFI_CONF := true
 
+# Inherit from sm8250-common
+$(call inherit-product, device/xiaomi/sm8250-common/common.mk)
+
+# Audio
+PRODUCT_COPY_FILES += \
+   $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # Camera
 $(call soong_config_set,camera,override_format_from_reserved,true)
+
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -17,36 +32,20 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayDevice \
     WifiResOverlayDevice
 
-# Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-
-# Audio
-PRODUCT_COPY_FILES += \
-   $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
-
-# Thermal configs
-PRODUCT_COPY_FILES += \
-   $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/thermal/,$(TARGET_COPY_OUT_VENDOR)/etc)
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
-
-# Platform
-TARGET_BOARD_PLATFORM := lito
+# Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Thermal configs
+PRODUCT_COPY_FILES += \
+   $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/thermal/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # WiFi
 PRODUCT_COPY_FILES += \
    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
-
-# Inherit from sm8250-common
-$(call inherit-product, device/xiaomi/sm8250-common/common.mk)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/picasso/picasso-vendor.mk)
