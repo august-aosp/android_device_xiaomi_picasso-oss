@@ -19,7 +19,7 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Camera
-$(call soong_config_set,camera,override_format_from_reserved,true)
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
