@@ -8,17 +8,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
-# YAAP
-TARGET_BUILD_GAPPS := true
-TARGET_SUPPORTS_64_BIT_APPS := true
-
-PRODUCT_NAME := yaap_picasso
+PRODUCT_NAME := custom_picasso
 PRODUCT_DEVICE := picasso
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
