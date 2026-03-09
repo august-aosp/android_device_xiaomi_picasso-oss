@@ -55,6 +55,3 @@ $(call inherit-product, vendor/xiaomi/picasso/picasso-vendor.mk)
 
 # Inherit from MIUI Camera
 $(call inherit-product-if-exists, vendor/xiaomi/camera/config.mk)
-
-# Include signing keys
--include vendor/lineage-priv/keys/keys.mk
